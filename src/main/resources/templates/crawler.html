@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>wemakeprice test - crawling page</title>
+</head>
+<style>
+* {
+    font-size: 14px;
+    font-color: #dedede;
+}
+body {
+    background-color: #fcfcfc;
+}
+section {
+    width: 100%;
+    padding: 20px;
+    background-color
+}
+dl {
+    padding: 10px;
+}
+dl:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
+}
+dl dt {
+    width: 120px;
+}
+dl dt, dl dd {
+    display: inline-block;
+}
+div {
+    margin: 0 30px 10px 0;
+}
+div:not(.div-button) {
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+div.div-button {
+    text-align: right;
+    margin-bottom: 30px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+</style>
+<script>
+
+</script>
+<body>
+    <section>
+        <form>
+            <div class="div-request">
+                <dl>
+                    <dt>URL</dt>
+                    <dd>
+                        <input type="text" id="url" value="" />
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Type</dt>
+                    <dd>
+                        <select id="cRawlingDataType">
+                            <option value="1">태그제외</option>
+                            <option value="2">text 전체</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>츌력묶음단위(자연수)</dt>
+                    <dd>
+                        <input type="number" min="1" value="1" />
+                    </dd>
+                </dl>
+            </div>
+            <div class="div-button">
+                <button type="button" id="submitButton">출력</button>
+            </div>
+            <div class="div-response">
+                <dl>
+                    <dt>몫</dt>
+                    <dd></dd>
+                </dl>
+                <dl>
+                    <dt>나머지</d>
+                    <dd></dd>
+                </dl>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
